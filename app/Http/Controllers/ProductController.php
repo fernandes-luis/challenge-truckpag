@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product;
 use App\Repositories\ProductRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Symfony\Component\HttpFoundation\Exception\BadRequestException;
 
 class ProductController extends Controller
 {
@@ -28,7 +26,7 @@ class ProductController extends Controller
             $response = [
                 'message' => 'Produto atualizado com sucesso',
                 'success' => true,
-                'code' => 201,
+                'code' => 200,
                 'product' => $product
             ];
             return $response;

@@ -1,66 +1,90 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Open Food Facts
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### O projeto tem como objetivo dar suporte a equipe de nutricionistas da empresa Fitness Foods LC para que eles possam revisar de maneira rápida a informação nutricional dos alimentos que os usuários publicam pela aplicação móvel.
 
-## About Laravel
+# Tecnologias utilzadas
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+* [Laravel](https://laravel.com/)
+* [Mysql](https://www.mysql.com/)
+* [Scribe](https://scribe.knuckles.wtf/laravel/)
+* [Docker](https://docs.docker.com/engine/install/ubuntu/)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# Ferramentas utilizadas
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+* [Vs Code](https://code.visualstudio.com/)
+* [Insomnia](https://insomnia.rest/download)
 
-## Learning Laravel
+# Instruções para iniciar o projeto
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* Clone o projeto para sua máquina.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+* Configure o .env no seu projeto: faça um cópia do 'env.example' para um '.env', após isso, configure o arquivo de acordo com sua conexão com banco de dados escolhido.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* Na pasta do projeto, digite os seguintes comandos:
+```sh
+composer install
+```
+Caso tenha configurado o alias do docker na sua máquina, execute:
+```sh
+sail up
+```
+Caso não tenha, execute:
+```sh
+./vendor/bin/sail up
+```
 
-## Laravel Sponsors
+* Rode o comando para a criação das tabelas no banco de dados do projeto:
+```sh
+./vendor/bin/sail migrate
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Isso inicializará o container na sua máquina
 
-### Premium Partners
+# Instruções para configurar o CRON em sua maquina
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+* Em seu terminal, execute:
+```
+crontab -e
+```
+Isso abrirá o arquivo crontab do usuário atual em um editor de texto, geralmente o vi ou nano, onde você pode adicionar ou editar seus cron jobs.
+  
+* No final do arquivo, adicione a seguinte linha:
 
-## Contributing
+```
+0 3 * * * cd /caminho/onde/está/seu/projeto && sail artisan cron:products >> /caminho/para/o/arquivo_de_saída.log 2>> /caminho/para/o/arquivo_de_erros.log
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```
+Isso fará com que o Cron seja executado todo dia, ás 3 da manhã. Os logs serão salvos no path informado após '>>' especificadas.
 
-## Code of Conduct
+# Instruções para executar os testes
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+* Crie um arquivo chamado "databse.sqlite" dentro do projeto na pasta 'database'. Faça uma copia da .env com o nome de .env.testing e faça as modificações necessárias para utilizar essas configurações nos teste. Um exemplo, é a alteração do DB utilizado abaixo:
+  
+```sh
+DB_CONNECTION=sqlite
+DB_DATABASE=database/databse.sqlite
+```
 
-## Security Vulnerabilities
+* Para executar os testes, execute o comando abaixo:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```sh
+./vendor/bin/sail artisan test --env=env.testing
+```
 
-## License
+# Documentação
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+* O projeto conta com uma documentação que foi gerada utilzando o 'Scribe'. Para ter acesso a ela, acesse a rota da pasta 'docs'.
+
+# Endpoints do projeto
+
+Listagem de endpoints do projeto
+
+
+| Endpoint                             | Retorno                                                                                                                                                             | Parâmetros do body                               |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| GET /                                | Retorna detalhes da API, se conexão leitura e escritura com a base de dados está OK, horário da última vez que o CRON foi executado, tempo online e uso de memória. |                                                  |
+| PUT /products/{code-product}    | Retorna o produto com as alterações feita                                                                                                                           | (nome do campo que deseja alterar) : (alteração) |
+| DELETE /products/{code-product} | Retorna o produto no qual o status foi alterado para "trash"                                                                                                        |                                                  |
+| GET /products/{code-product}    | Retorna o produto compativel com o codigo enviado                                                                                                                   |                                                  |
+| GET /products                        | Retorna todos os produtos cadastrados no banco de dados                                                                                                             |
+|                                      |

@@ -13,28 +13,28 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id('code')->index();
-            $table->enum('status', ['draft', 'trash', 'published']);
-            $table->dateTime('imported_t');
-            $table->text('url');
-            $table->string('creator');
-            $table->timestamp('created_t')->useCurrent();
-            $table->timestamp('last_modified_t')->useCurrentOnUpdate();
-            $table->string('product_name')->index();
-            $table->string('quantity');
-            $table->string('brands');
-            $table->string('categories');
-            $table->string('labels');
-            $table->string('cities')->nullable();
-            $table->string('purchase_places');
-            $table->string('stores');
-            $table->text('ingredients_text');
-            $table->string('traces');
-            $table->string('serving_size');
-            $table->float('serving_quantity');
-            $table->integer('nutriscore_score');
-            $table->char('nutriscore_grade', 1);
-            $table->string('main_category');
-            $table->text('image_url');
+            $table->enum('status', ['draft', 'trash', 'published'])->nullable();
+            $table->date('imported_t');
+            $table->text('url')->nullable();
+            $table->string('creator')->nullable();
+            $table->timestamp('created_t')->useCurrent()->nullable();
+            $table->timestamp('last_modified_t')->useCurrentOnUpdate()->nullable();
+            $table->string('product_name')->index()->nullable();
+            $table->string('quantity')->nullable();
+            $table->string('brands')->nullable();
+            $table->text('categories')->nullable();
+            $table->string('labels')->nullable();
+            $table->string('cities')->nullable()->nullable();
+            $table->string('purchase_places')->nullable();
+            $table->string('stores')->nullable();
+            $table->text('ingredients_text')->nullable();
+            $table->string('traces')->nullable();
+            $table->string('serving_size')->nullable();
+            $table->double('serving_quantity')->nullable();
+            $table->integer('nutriscore_score')->nullable();
+            $table->char('nutriscore_grade', 1)->nullable();
+            $table->string('main_category')->nullable();
+            $table->text('image_url')->nullable();
         });
     }
 

@@ -1,0 +1,242 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/products
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"current_page":1,"data":[{"code":17,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/0000000000017\/vitoria-crackers","creator":"kiliweb","created_t":"2018-06-15T10:38:00.000000Z","last_modified_t":"2019-06-25T11:55:18.000000Z","product_name":"Vit\u00f3ria crackers","quantity":"","brands":"","categories":"","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"","traces":"","serving_size":"","serving_quantity":null,"nutriscore_score":null,"nutriscore_grade":"","main_category":"","image_url":"https:\/\/static.openfoodfacts.org\/images\/products\/000\/000\/000\/0017\/front_fr.4.400.jpg"},{"code":31,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/0000000000031\/cacao","creator":"isagoofy","created_t":"2018-10-13T21:06:14.000000Z","last_modified_t":"2018-10-13T21:06:57.000000Z","product_name":"Cacao","quantity":"130 g","brands":"","categories":"","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"","traces":"","serving_size":"","serving_quantity":null,"nutriscore_score":null,"nutriscore_grade":"","main_category":"","image_url":"https:\/\/static.openfoodfacts.org\/images\/products\/000\/000\/000\/0031\/front_fr.3.400.jpg"},{"code":100,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/0000000000100\/moutarde-au-mout-de-raisin-courte-paille","creator":"del51","created_t":"2015-10-11T14:09:21.000000Z","last_modified_t":"2015-10-12T14:13:32.000000Z","product_name":" moutarde au mo\u00fbt de raisin ","quantity":"100g","brands":"courte paille","categories":"Epicerie, Condiments, Sauces, Moutardes","labels":"Delois france","cities":"","purchase_places":"","stores":"courte paille","ingredients_text":"eau graines de t\u00e9guments de moutarde vinaigre de vin rouge sel vin rouge sucre   mo\u00fbt de raisin (6.2%) oignons colorants extraits de carotte et extrait de paprika huile de tournesol son de moutarde sel (cette _moutarde_ uniquement disponible chez courte paille)","traces":"","serving_size":"","serving_quantity":null,"nutriscore_score":18,"nutriscore_grade":"d","main_category":"en:mustards","image_url":"https:\/\/static.openfoodfacts.org\/images\/products\/000\/000\/000\/0100\/front.3.400.jpg"},{"code":3327986,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/000000000003327986\/filetes-de-pollo-empanado","creator":"kiliweb","created_t":"2019-11-19T15:02:16.000000Z","last_modified_t":"2019-11-19T15:02:17.000000Z","product_name":"Filetes de pollo empanado","quantity":"","brands":"","categories":"","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"","traces":"","serving_size":"","serving_quantity":null,"nutriscore_score":null,"nutriscore_grade":"","main_category":"","image_url":"https:\/\/static.openfoodfacts.org\/images\/products\/000\/000\/000\/003327986\/front_es.3.400.jpg"},{"code":29102648,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/29102648\/piri-piri-houmous","creator":"kiliweb","created_t":"2020-08-23T15:49:24.000000Z","last_modified_t":"2020-08-23T15:49:25.000000Z","product_name":"Piri Piri Houmous","quantity":"","brands":"","categories":"","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"","traces":"","serving_size":"","serving_quantity":null,"nutriscore_score":null,"nutriscore_grade":"","main_category":"","image_url":"https:\/\/static.openfoodfacts.org\/images\/products\/29102648\/front_en.3.400.jpg"},{"code":29102846,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/29102846","creator":"hungergames","created_t":"2020-11-24T19:01:59.000000Z","last_modified_t":"2020-11-24T19:14:09.000000Z","product_name":"","quantity":"","brands":"","categories":"","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"Spring Water Malted Barley (contains Gluten) Hops Yeast. For allergens see ingredients in bold. Suitable for vegans SERVING Serve lightly chilled but not too cold to appreciate all the flavours. STORAGE Store in a cool, dry place, away from sunlight. BEST BEFORE END 10 2021 L202 96 Bow FO 5% VOL 500mle M2910 2846 S","traces":"","serving_size":"","serving_quantity":null,"nutriscore_score":null,"nutriscore_grade":"","main_category":"","image_url":"https:\/\/static.openfoodfacts.org\/images\/products\/29102846\/front_fr.4.400.jpg"},{"code":1111111111,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/00000000001111111111\/sfiudwx-watt","creator":"openfoodfacts-contributors","created_t":"2019-06-08T18:56:13.000000Z","last_modified_t":"2019-06-08T18:56:13.000000Z","product_name":"Sfiudwx","quantity":"dgesc","brands":"Watt","categories":"Xsf","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"","traces":"","serving_size":"","serving_quantity":null,"nutriscore_score":null,"nutriscore_grade":"","main_category":"fr:xsf","image_url":""},{"code":73490180286,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/0073490180286\/absolutely-gluten-free-classic-coconut-macaroons-toasted-coconut-royal-wine-corporation","creator":"usda-ndb-import","created_t":"2017-03-09T16:18:20.000000Z","last_modified_t":"2020-04-22T20:44:09.000000Z","product_name":"Absolutely, Gluten Free Classic Coconut Macaroons, Toasted Coconut","quantity":"","brands":"Royal Wine Corporation","categories":"Snacks, Sweet snacks, Biscuits and cakes, Biscuits, Pastries, Coconut Macaroons","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"Unsweetened sulfite free coconut, invert sugar, tapioca, egg whites.","traces":"","serving_size":"2 MACAROONS (28 g)","serving_quantity":28,"nutriscore_score":21,"nutriscore_grade":"e","main_category":"en:coconut-macaroons","image_url":""},{"code":73490180293,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/0073490180293\/absolutely-gluten-free-classic-coconut-macaroons-chocolate-royal-wine-corporation","creator":"usda-ndb-import","created_t":"2017-03-09T15:15:56.000000Z","last_modified_t":"2020-04-22T20:00:42.000000Z","product_name":"Absolutely Gluten Free, Classic Coconut Macaroons, Chocolate","quantity":"","brands":"Royal Wine Corporation","categories":"Snacks, Sweet snacks, Biscuits and cakes, Biscuits, Pastries, Coconut Macaroons","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"Unsweetened sulfite free coconut, invert sugar, tapioca, cocoa, egg whites, natural flavor.","traces":"","serving_size":"2 MACRAROONS (28 g)","serving_quantity":28,"nutriscore_score":21,"nutriscore_grade":"e","main_category":"en:coconut-macaroons","image_url":""},{"code":73490180408,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/0073490180408\/tahinibar-super-seed-energy-bar-vanilla","creator":"org-database-usda","created_t":"2020-04-23T18:26:53.000000Z","last_modified_t":"2020-04-23T18:26:53.000000Z","product_name":"Tahinibar super seed energy bar, vanilla","quantity":"","brands":"","categories":"Snacks","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"Tahini (roasted sesame seeds, salt), sugar, glucose syrup, vegetable oil (palm), mono & diglycerides (emulsifier), soy lecithin (emulsifier), saponariae root extract (surfactant), natural flavor and citric acid (acidulant).","traces":"","serving_size":"1 BAR (18 g)","serving_quantity":18,"nutriscore_score":13,"nutriscore_grade":"d","main_category":"en:snacks","image_url":""},{"code":73490180422,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/0073490180422\/tahinibar","creator":"org-database-usda","created_t":"2020-04-23T18:06:31.000000Z","last_modified_t":"2020-04-23T18:06:31.000000Z","product_name":"Tahinibar","quantity":"","brands":"","categories":"Snacks","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"Tahini (roasted sesame seeds, salt), sugar, glucose syrup, cocoa beans, vegetable oil (palm), mono & diglycerides (emulsifier), soy lecithin (emulsifier), saponariae root extract (surfactant), natural flavor and citric acid (acidulant).","traces":"","serving_size":"1 BAR (18 g)","serving_quantity":18,"nutriscore_score":12,"nutriscore_grade":"d","main_category":"en:snacks","image_url":""},{"code":73491001009,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/0073491001009\/original-recipe-rice-pudding-original-recipe-kozy-shack-enterprises-llc","creator":"usda-ndb-import","created_t":"2017-03-09T10:53:33.000000Z","last_modified_t":"2020-04-22T16:48:22.000000Z","product_name":"Original recipe rice pudding, original recipe","quantity":"","brands":"Kozy Shack Enterprises  Llc","categories":"Desserts","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"Reduced fat milk, rice, sugar, contains less than 2% of eggs, salt, natural flavors.","traces":"","serving_size":"1 SNACK CUP (113 g)","serving_quantity":113,"nutriscore_score":2,"nutriscore_grade":"b","main_category":"en:desserts","image_url":""},{"code":815360014624,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/0815360014624\/cherry-lattice-pie","creator":"org-database-usda","created_t":"2020-04-23T11:46:28.000000Z","last_modified_t":"2020-04-23T11:46:28.000000Z","product_name":"Cherry lattice pie","quantity":"","brands":"","categories":"Biscuits and cakes, Cakes","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"Cherries, enriched flour (flour, niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid), water, sugar, palm oil, corn syrup, food starch-modified, contains less than 2% of: ascorbic acid, salt, dextrose, carob bean gum, agar, cellulose gum, sodium chloride, sorbic acid, apple cider vinegar, calcium propionate.","traces":"","serving_size":"0.2 PIE (136 g)","serving_quantity":136,"nutriscore_score":13,"nutriscore_grade":"d","main_category":"en:cakes","image_url":""},{"code":815360014631,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/0815360014631\/berry-lattice-pie","creator":"org-database-usda","created_t":"2020-04-23T12:27:01.000000Z","last_modified_t":"2020-04-23T12:27:01.000000Z","product_name":"Berry lattice pie","quantity":"","brands":"","categories":"Biscuits and cakes, Cakes","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"Blackberries, water, enriched flour (flour, niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid), sugar, palm oil, food starch-modified, contains less than 2% of: salt, dextrose, corn syrup, sorbic acid, apple cider vinegar, carob bean gum, cellulose gum, agar, calcium propionate.","traces":"","serving_size":"0.2 PIE (136 g)","serving_quantity":136,"nutriscore_score":13,"nutriscore_grade":"d","main_category":"en:cakes","image_url":""},{"code":815360014655,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/0815360014655\/mince-pie","creator":"org-database-usda","created_t":"2020-04-23T11:44:55.000000Z","last_modified_t":"2020-04-23T11:44:55.000000Z","product_name":"Mince pie","quantity":"","brands":"","categories":"Biscuits and cakes, Cakes, Cooking helpers, Dessert mixes, Pastry helpers, Cake mixes","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"Water, enriched flour (flour, niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid), apples, palm oil, raisins, sugar, food starch-modified, corn syrup, pineapple, contains 2% or less of: egg, apple cider vinegar, salt, dextrose, spices, natural and artificial flavor, ascorbic acid, citric acid, potassium sorbate and calcium propionate (to preserve freshness).","traces":"","serving_size":"0.2 PIE (136 g)","serving_quantity":136,"nutriscore_score":null,"nutriscore_grade":"","main_category":"en:cake-mixes","image_url":""}],"first_page_url":"http:\/\/localhost\/api\/products?page=1","from":1,"last_page":2,"last_page_url":"http:\/\/localhost\/api\/products?page=2","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/api\/products?page=1","label":"1","active":true},{"url":"http:\/\/localhost\/api\/products?page=2","label":"2","active":false},{"url":"http:\/\/localhost\/api\/products?page=2","label":"Next &raquo;","active":false}],"next_page_url":"http:\/\/localhost\/api\/products?page=2","path":"http:\/\/localhost\/api\/products","per_page":15,"prev_page_url":null,"to":15,"total":20}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/products
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/products/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the product.'
+        required: true
+        example: 17
+        type: integer
+        enumValues: []
+        custom: []
+    cleanUrlParameters:
+      id: 17
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"code":17,"status":"published","imported_t":"2023-10-15","url":"http:\/\/world-en.openfoodfacts.org\/product\/0000000000017\/vitoria-crackers","creator":"kiliweb","created_t":"2018-06-15T10:38:00.000000Z","last_modified_t":"2019-06-25T11:55:18.000000Z","product_name":"Vit\u00f3ria crackers","quantity":"","brands":"","categories":"","labels":"","cities":"","purchase_places":"","stores":"","ingredients_text":"","traces":"","serving_size":"","serving_quantity":null,"nutriscore_score":null,"nutriscore_grade":"","main_category":"","image_url":"https:\/\/static.openfoodfacts.org\/images\/products\/000\/000\/000\/0017\/front_fr.4.400.jpg"}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/products/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the product.'
+        required: true
+        example: 17
+        type: integer
+        enumValues: []
+        custom: []
+    cleanUrlParameters:
+      id: 17
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/products/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the product.'
+        required: true
+        example: 17
+        type: integer
+        enumValues: []
+        custom: []
+    cleanUrlParameters:
+      id: 17
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/user
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

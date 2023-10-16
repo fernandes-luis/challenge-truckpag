@@ -9,12 +9,14 @@ class Product extends Model
 {
     use HasFactory;
 
+    protected $table = 'products';
     protected $primaryKey = 'code';
 
     const CREATED_AT = 'created_t';
     const UPDATED_AT = 'last_modified_t';
 
     protected $fillable = [
+        'code',
         'status',
         'imported_t',
         'url',
@@ -34,7 +36,9 @@ class Product extends Model
         'nutriscore_score',
         'nutriscore_grade',
         'main_category',
-        'image_url'
+        'image_url',
+        'created_t',
+        'last_modified_t'
     ];
 
 }
